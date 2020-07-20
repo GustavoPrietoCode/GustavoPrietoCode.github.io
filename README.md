@@ -1,2 +1,2 @@
-# aprendiendocodigodecero.github.io
+# GustavoPrietoCode.github.io
 aprendiz de código
