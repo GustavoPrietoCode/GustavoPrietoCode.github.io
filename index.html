@@ -1,38 +1,140 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
-	<title>Mi primera pagina</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/diseñofinal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <title>Gustavo Prieto Desarrollador web</title>
 </head>
-<header>
- 	<h1>
- 		<a href="">Gustavo Prieto</a>
-	</h1>
+<body>
 
-    <nav>
-    <a href="index.html">Home</a>
-    <a>bio</a>
-    <a>Contacto</a>
-	</nav>
+     <!--HEADER -->
+
+<header class="hero">
+  <section class="wrap">
+      <div class="box">
+              <nav class="menu">
+                <ul id="menu-list">
+                  <li>
+                    <a href="">INICIO</a>
+                  </li>
+                  <li>
+                    <a href="#todosservicios">SERVICIOS</a>
+                  </li>
+                  <li>
+                    <a href="">PORFOLIO</a>
+                  </li>
+                  <li>
+                    <a href="">BLOG</a>
+                  </li>
+                  <li>
+                    <a href="#contacta">CONTACTO</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="portada"> 
+                <div class="encabezado">
+                  <h2> &ltWeb desarrollada en HTML y CSS&gt</h2>
+                </div>
+                <div class="presentacion">
+                    <div>
+                     <!--   <figure>
+                          <img src="material/Gus BN.jpg" alt="Gustavo">
+                      </figure> -->
+                        <h2>&ltGustavo Prieto&gt</h2>
+                        <p>&ltDesarrollador Web&gt</p>
+                      <div class="bio">
+                      </div>
+                    </div>
+
+                </div>
+
+              </div>
+          </div>
+    </section>
 </header>
+     <!--SERVICIOS -->
 
-<section>
-<h1>VIDEO</h1>
-	<p>Uno de mis primeros cortometrajes realizado en Madrid en el 2008</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KTtYzrUu1ZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<hr>
-	
- <section>
-    <h2>L'amour</h2>
-    <p>Cortometraje L'amour dirigido por Gustavo Prieto y producido por Menos Veinte producciones. Protagonizado por Jesús Guzmán, Jesús Caba, Camino Texeiro y Julia Trujillo. Rodado en Madrid en S16mm en octubre del 2007.
-</p>
+  <section class="servicios" id="todosservicios">
+    <h2 class="tituloprincipal">&ltSERVICIOS&gt</h2>
+        <div class="trescajas">
+          <div class="cajaservicios" id="desarrollo">
+            <h2 class="tituloservicios">&ltDESARROLLO&gt</h2>
+            <ol>
+              <li>Creamos el branding completo de tu marca.</li>
+              <li>Diseñamos la web que refleje tu estilo</li>
+            </ol>
+            <button class=btn>Conoce más</button>
+          </div>
 
-<footer>
-  <small>&copy; Gustavo Prieto</small>
-    <nav>
-    <a href="index.html">Home</a>
-    <a>bio</a>
-    <a>Contacto</a>
-	</nav>
+          <div class="cajaservicios" id="mantenimiento">
+            <h2 class="tituloservicios">&ltMANTENIMIENTO&gt</h2>
+            <ol>
+              <li>Te ayudo a mantener tu página siempre a punto</li>
+              <li>Actualización de versiones, revisión de seguridad y rendimiento</li>
+            </ol>
+            <button class=btn>Conoce más</button>
+          </div>
+
+          <div class="cajaservicios" id="puestamarcha">
+            <h2 class="tituloservicios">&ltPUESTA EN MARCHA&gt</h2>
+            <ol>
+              <li>Instalación Wordpress para que crees tu web por ti mismo.</li>
+              <li>Incluimos los plugins más importantes.</li>
+            </ol>
+            <button class=btn>Conoce más</button>
+          </div>
+        </div>
+  </section>
+
+       <!--PORFOLIO -->
+
+       <!--FORMULARIO CONTACTO -->
+
+<section class="formulario" id="contacta">
+  <div class="cajaformulario">
+    <h2 class="tituloform">Contacta</h2>
+      <form id="form">
+
+        <div class="form-group">
+          <p id="name-label" for="name">Nombre</p>
+          <input type="name" name="nombre" id="nombre" class="form-control"
+          placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <p id="email-label" for="email">Email</p>
+          <input type="email" name="Email" id="Email" class="form-control"
+          placeholder="Escribe tu email" required>
+        </div>
+
+        <div class="form-group">
+          <p>Mensaje</p>
+          <textarea name="Mensaje" id="comentarios" class="input-textarea" 
+          placeholder="¿En qué te puedo ayudar"></textarea>
+        </div>
+
+        <div class="form-group">
+          <input id="submit" type="submit" value="Enviar" class="btn">
+        </div>
+      </form>
+  </div>
+</section>
+
+     <!--FOOTER -->
+
+<footer class="footercompleto">
+      <div class="cajapie1">
+        <h1>&ltGustavo Prieto&gt</h1>
+        <p>Desarrollador web junior</p>
+      </div>
+      <div class="cajapie2">
+        <p>contacto</p>
+      </div>
+    
 </footer>
 
+</body>
 </html>

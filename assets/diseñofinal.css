@@ -1,0 +1,188 @@
+
+
+body {
+  font-family: 'ubuntu', sans-serif;
+  border: solid 1px red;
+
+}
+
+
+/* HEADER */      
+
+.hero {
+  max-width: 100%;
+  height: 45vh;
+  padding: 60px 0;
+	position: relative;
+  background-image: url("https://image.freepik.com/vector-gratis/numeros-codigo-binario-futurista-fondo-datos-digitales_1017-25334.jpg");
+  background-position: center;
+	background-size: cover;
+}
+
+/* Capa de Opacidad de la imagen*/
+.hero:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(
+		90deg,
+		rgba(52,57,62,.5),	
+		rgba(52,57,62,.5)
+	);
+}
+
+.hero .wrap {
+	max-width: 1000px;
+	margin: 0 auto;
+	height: 100%;
+	display: grid;
+  justify-content: top;
+}
+
+.hero .wrap .box {
+	z-index: 2;
+}
+
+/*--NAVEGADOR ---*/
+
+.hero .wrap .box .menu ul {
+    display: grid;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+  }
+
+.hero .wrap .box .menu a {
+    display: block;
+    border: solid 1px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+  }
+ 
+  /* ------------------------PRESENTACIÓN*/
+.hero .wrap .box .portada {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 20px;
+  color: white;
+  border: solid 1px white;
+  text-align: center;
+}
+
+.hero .wrap .box .portada .encabezado {
+  background-color: white;
+  border: 5px;
+  margin: 15px;
+  padding: 20px;
+  color: black;
+}
+
+.hero .wrap .box .portada .presentacion {
+  background-color: white;
+  border: 5px;
+  margin: 15px;
+  padding: 15px;
+  border: solid 1px black;
+  color: black;
+}
+
+
+  /* ------------------------SERVICIOS */
+.servicios {
+  border: solid 1px black;
+  column-gap: 10px;
+  margin: 20px;
+  padding: 15px 50px;
+}
+
+.servicios .tituloprincipal {
+  position: flex;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+.servicios .trescajas {
+  border: solid 1px black;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 60px;
+  padding: 15px;
+}
+
+.servicios .trescajas .cajaservicios {
+  margin-top: 20px;
+  border: 1px solid red;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+
+
+  /* ------------------------FORMULARIO DE CONTACTO */
+.formulario {
+  display: grid;
+  border: 1px solid black;
+  margin: 20px;
+  justify-content: center;
+}
+
+.formulario .cajaformulario {
+  width: 350px;
+  margin: 20px;
+  padding: 10px;
+  justify-items: center;
+  border: 1px solid black;
+  color: black;
+}
+
+.formulario .cajaformulario .form-control {
+  margin:10px;
+}
+
+.formulario .cajaformulario input {
+  padding: 7px;
+
+}
+
+.formulario .cajaformulario input[type="submit"]{
+  background-color: yellow;
+  font-weight: bold;
+  padding: 15px;
+  margin-top: 15px;
+
+}
+
+  /* ------------------------FOOTER */
+
+.footercompleto {
+    position: relative;
+    margin: 20px;
+    bottom: 0;
+    height: 250px;
+    border: 1px solid black;
+    color:black;
+  }
+
+.footercompleto .cajapie1{
+    padding-top: 50px;
+    text-align: center;
+    line-height: 10px;
+
+  }
+
+.footercompleto .cajapie2 {
+    padding: 20px;
+    text-align: center;
+  }
