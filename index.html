@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="stylesheet" href="assets/diseñofinal.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Gustavo Prieto - Desarrollador web</title>
+    <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
-    <title>Gustavo Prieto Desarrollador web</title>
+    
 </head>
 <body>
 
@@ -90,7 +92,13 @@
   </section>
 
        <!--PORFOLIO -->
-
+  <section class="porfolio">
+    <div class="wrap">
+      <div class="column">
+        <h2 class="tituloprincipal">&ltPORFOLIO&gt</h2>
+      </div>
+    </div>
+  </section>
        <!--FORMULARIO CONTACTO -->
 
 <section class="formulario" id="contacta">
@@ -99,26 +107,24 @@
       <form id="form">
 
         <div class="form-group">
-          <p id="name-label" for="name">Nombre</p>
           <input type="name" name="nombre" id="nombre" class="form-control"
           placeholder="Escribe tu nombre" required>
         </div>
 
         <div class="form-group">
-          <p id="email-label" for="email">Email</p>
           <input type="email" name="Email" id="Email" class="form-control"
           placeholder="Escribe tu email" required>
         </div>
 
         <div class="form-group">
-          <p>Mensaje</p>
-          <textarea name="Mensaje" id="comentarios" class="input-textarea" 
-          placeholder="¿En qué te puedo ayudar"></textarea>
+          <textarea type="text" name="textarea" id="text" class="form-control"
+          placeholder="Escribe tu mensaje" required></textarea>
         </div>
 
         <div class="form-group">
-          <input id="submit" type="submit" value="Enviar" class="btn">
+          <input type="submit" value="Enviar">
         </div>
+
       </form>
   </div>
 </section>
