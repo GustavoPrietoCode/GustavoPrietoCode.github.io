@@ -1,2 +1,3 @@
 # GustavoPrietoCode.github.io
-aprendiz de código
+
+Desarrollador Web Junior
