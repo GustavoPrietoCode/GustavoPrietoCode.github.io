@@ -130,22 +130,36 @@ body {
   text-align: center;
 }
 
+.servicios .trescajas .cajaservicios button{
+  border: 1px solid greenyellow;
+  
+}
+
   /* ------------------------PORFOLIO */
 
 .porfolio {
   display: flex;
+  justify-content: center;
+  align-content: center;
   height: 500px;
   border: solid 1px black;
   margin: 10px;
   padding: 15px 50px;
 }
 
-.porfolio .wrap .column h2 {
-  text-size: 25px;
-
+.porfolio .wrap h2 {
+  position: flex;
+  text-align: center;
 }
 
-
+.porfolio .wrap .cajaservicios {
+  border: 1px solid red;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
