@@ -1,0 +1,193 @@
+
+
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Menu collapse</title>
+
+           <style>
+
+:root{
+    --main-color: hsl(210deg, 70%, 9%);
+    --menu-color: hsl(200deg, 90%, 8%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    max-width: 90em;
+    margin: 0 auto;
+    font: 1em 'Noto Sans JP', sans-serif;
+    background-color: rgba(5, 80, 80, 0.932);
+}
+
+.top-header{
+    position: fixed;
+    width: 100%;
+    max-width: 90em;
+}
+
+
+/* NAVEGADOR */
+
+nav > ul:nth-of-type(1){
+    display: flex;
+    background-color: var(--main-color);
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 3vmin .5em 1vmin;
+}
+
+nav > ul:nth-of-type(1) a{
+    color: hsla(210deg, 70%, 95%, .8);
+}
+
+nav label{
+    display: block;
+    background-color: rgba(1, 12, 12, 0.829);
+    padding: 0.06em .3em;
+    position: relative;
+    height: 1.2em;
+    width: 2em;
+    cursor: pointer
+}
+nav  label > div{
+    height: .16em;
+    margin-bottom: .26em;
+    width: 1.4em;
+    background-color: rgba(217, 220, 223, 0.986);
+    transition: all .3s ease;
+    /* border-radius: 3px 1px 1px 1px / 2px 3px 2px 4px; */
+}
+
+input[aria-hidden="true"]:checked + ul  label{
+    height: 1.2em;
+    width: 2em;
+}
+
+input[aria-hidden="true"]:checked + ul  label > div:nth-child(3){
+    display: none;
+}
+
+input[aria-hidden="true"]:checked + ul  label > div:nth-child(2){
+    transform: rotate(45deg);
+    position: absolute;
+    width: 1.2em;
+    top: 40%;
+    left: 20%;
+
+
+}
+
+input[aria-hidden="true"]:checked + ul  label > div:nth-child(1){
+    transform: rotate(-45deg);
+    position: absolute;
+    width: 1.2em;
+    top: 40%;
+    left: 20%;
+
+}
+
+input[aria-hidden="true"]{
+    display: none;
+}
+
+input[aria-hidden="true"]:checked ~ .menu-links{
+    display: block;
+}
+
+
+
+/* ESTILO DEL MENU */
+
+
+.menu-links ul{
+    list-style: none;
+}
+
+.menu-links{
+    text-align: center;
+    background-color: var(--menu-color);
+    padding: .7rem .5rem;
+    display: none;
+    border-top: 1px solid rgb(82, 73, 57);
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+
+.menu-links a{
+    color: white;
+    font-size: 1em;
+    letter-spacing: 1px;
+
+}
+
+.menu-links li{
+    margin-bottom: .5em;
+    padding: .3em;
+
+}
+
+.menu-links li:hover, .menu-links li:focus{
+    background-color: rgb(104, 73, 73);
+}
+
+.menu-links li:active{
+    background-color: rgb(97, 48, 48);
+} 
+
+
+           </style>
+
+
+       </head>
+       <body>
+        <header id="header" class="top-header">
+
+            <nav id="nav-bar" class="header-nav">
+                <input aria-hidden="true" class="input" type="checkbox" id="menu-toggle">
+
+                <ul>
+					<li>
+                        <a href="#">Food Camp</a>
+                    </li>
+
+					<li>
+                        <label aria-hidden="true" for="menu-toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="menu-links">
+                    <ul>
+                        <a class="nav-link" href="#about"><li>About Us</li></a>
+                        <a class="nav-link" href="#form"><li>Sign Up</li></a>
+                        <a class="nav-link" href="#new-products"><li>New Products</li></a>
+                        <a href="#ending"><li>Privacy</li></a>
+                     
+                    </ul>                    
+                </div>
+            </nav>
+        </header>   <!--END OF HEADER-NAV-->   
+
+
+       </body>
+       </html>
+       
+       
+       
+      

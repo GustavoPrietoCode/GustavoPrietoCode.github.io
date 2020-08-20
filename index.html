@@ -3,151 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/normalize.css">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Gustavo Prieto - Desarrollador web</title>
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
-    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <title>Gustavo Prieto Desarrollador web</title>
 </head>
+<!--
+    CSS style
+-->
+<style>
+body{
+    color:aliceblue;
+    font-family:'Quicksand', sans-serif;
+    background: black;
+    padding: 25px 10px 20px 100px;
+}
+
+.wrapper {
+    display: grid;
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 60px;
+}
+
+p, a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+
+#caja1 {
+    background: whitesmoke;
+    color: black;
+}
+
+#caja3 {
+    background: whitesmoke;
+    color: black;
+}
+
+</style>
 <body>
-
-     <!--HEADER -->
-
-<header class="hero">
-  <section class="wrap">
-      <div class="box">
-              <nav class="menu">
-                <ul id="menu-list">
-                  <li>
-                    <a href="">INICIO</a>
-                  </li>
-                  <li>
-                    <a href="#todosservicios">SERVICIOS</a>
-                  </li>
-                  <li>
-                    <a href="#porfolio">PORFOLIO</a>
-                  </li>
-                  <li>
-                    <a href="">BLOG</a>
-                  </li>
-                  <li>
-                    <a href="#contacta">CONTACTO</a>
-                  </li>
-                </ul>
-              </nav>
-              <div class="portada"> 
-                          <div class="encabezado">
-                              <h2> &ltWeb desarrollada en HTML y CSS&gt</h2>
-                          </div>
-                        <div class="presentacion">
-                              <h2>&ltGustavo Prieto&gt</h2>
-                              <h4>&ltDesarrollador Web Junior&gt</h4>
-                          </div>
-              </div>
-          </div>
-    </section>
-</header>
-     <!--SERVICIOS -->
-
-  <section class="servicios" id="todosservicios">
-    <h2 class="tituloprincipal">&ltSERVICIOS&gt</h2>
-        <div class="trescajas">
-          <div class="cajaservicios" id="desarrollo">
-            <h2 class="tituloservicios">&ltDESARROLLO&gt</h2>
-            <ol>
-              <li>Creamos el branding completo de tu marca.</li>
-              <li>Diseñamos la web que refleje tu estilo</li>
-            </ol>
-            <button class=btn>Conoce más</button>
-          </div>
-
-          <div class="cajaservicios" id="mantenimiento">
-            <h2 class="tituloservicios">&ltMANTENIMIENTO&gt</h2>
-            <ol>
-              <li>Te ayudo a mantener tu página siempre a punto</li>
-              <li>Actualización de versiones, revisión de seguridad y rendimiento</li>
-            </ol>
-            <button class=btn>Conoce más</button>
-          </div>
-
-          <div class="cajaservicios" id="puestamarcha">
-            <h2 class="tituloservicios">&ltPUESTA EN MARCHA&gt</h2>
-            <ol>
-              <li>Instalación Wordpress para que crees tu web por ti mismo.</li>
-              <li>Incluimos los plugins más importantes.</li>
-            </ol>
-            <button class=btn>Conoce más</button>
-          </div>
+    <div class="wrapper">
+        <div id="caja1">
+            <h1>Hola,<br>soy Gustavo Prieto</h1>
+            <br>
+            <p>Desarrollador Web Junior</p>
         </div>
-  </section>
-
-       <!--PORFOLIO -->
-  <section class="porfolio" id="porfolio">
-    <div class="wrap">
-
-        <h2 class="tituloprincipal">&ltPORFOLIO&gt</h2>
-
-        <div class="cajas">
-         
-          <div class="cajaservicios" >
-            <h2 class="titulo">&ltWeb minimal&gt</h2>
-            <p>Web minimalista creada en HTML y CSS</p>
-            <button onclick="window.location.href='paginas/minimal.html'">Web001</button>
-          </div>
-
-          <div class="cajaservicios" >
-            <h2 class="titulo">&ltWeb Empresa&gt</h2>
-            <p>Web en HTML y CSS con efectos</p>
-            <button onclick="window.location.href=''">Web002</button>
-          </div>
-
-        </div>
-  
+            <br>
+        <div id="caja2">
+            <h1>Amaso y horneo webs con mimo</h1>
+            <p>-Optimizadas para móviles y SEO
+                <br>-Analítica web integrada
+                <br>-Diseño con criterios de Marketing Digital
+            <br>-Landing Pages</p>
+         </div>
+         <div id="caja3">
+            <h1>Porfolio</h1>
+            <p><a href="https://www.marketingaudiovisual.es">-Marketing Digital</a>
+                <br>
+                <a href="https://becreative.es/">-Becreative</a>
+                <br>
+                <a href="Web grid/Index_webgrid.html">-Web personal Grid CSS</a>
+            </p>
+         </div>
+         <footer>
+            <h1>Esto es el footer</h1>
+            <p>Aquí termina la web
+                <br> donde pongo mi contacto</p>
+                <p><a href=mailto:noticiasgus@gmail.com>noticiasgus@gmail.com</a></p>
+         </footer>
     </div>
-  </section>
-       <!--FORMULARIO CONTACTO -->
-
-<section class="formulario" id="contacta">
-  <div class="cajaformulario">
-    <h2 class="tituloform">Contacta</h2>
-      <form id="form">
-
-        <div class="form-group">
-          <input type="name" name="nombre" id="nombre" class="form-control"
-          placeholder="Escribe tu nombre" required>
-        </div>
-
-        <div class="form-group">
-          <input type="email" name="Email" id="Email" class="form-control"
-          placeholder="Escribe tu email" required>
-        </div>
-
-        <div class="form-group">
-          <textarea type="text" name="textarea" id="text" class="form-control"
-          placeholder="Escribe tu mensaje" required></textarea>
-        </div>
-
-        <div class="form-group">
-          <input type="submit" value="Enviar">
-        </div>
-
-      </form>
-  </div>
-</section>
-
-     <!--FOOTER -->
-
-<footer class="footercompleto">
-      <div class="cajapie1">
-        <h1>&ltGustavo Prieto&gt</h1>
-        <p>Desarrollador web junior</p>
-      </div>
-      <div class="cajapie2">
-        <p>contacto</p>
-      </div>
-    
-</footer>
-
 </body>
 </html>
