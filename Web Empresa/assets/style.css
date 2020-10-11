@@ -24,21 +24,33 @@ header {
 
 
 
-/* SECTION HERO */
+/* SECTION HERO */ 
 
-.hero {
+.hero-image {
+        background-image: url("../img/heroe.jpg");
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 20px;
         /* border: solid 1px red; */
 }
 
-/* .img-fluid {
-    height: 50%;
-} */
+.hero-text {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: black;
+      }
 
-
-/* ICONOS  */
+/* CALL TO ACTION (ICONOS)  */
 
 .container {
         border: solid 1px black;
+        margin-bottom: 20px;
 }
 
 #iconos {
@@ -62,7 +74,7 @@ header {
 
 } */
 
-/* EFECTO TEXTO APARECE */
+/******************CALL TO ACTION (EFECTO TEXTO APARECE) */
 
 #iconos .row .col .text {
         bottom: -50px;
@@ -82,8 +94,7 @@ header {
         opacity: 1;
 }
 
-/* ACRODEON */
-
+/*********************** COLLAPSE (ACORDEON) */
 #features {
         min-height: 100px;
         /* border: solid 1px red; */
@@ -98,8 +109,8 @@ header {
         color: #fff;
 }
 
-/* POPUP */
 
+/********************** POPOVER */
 #popup {
         /* border: solid 1px red; */
         margin: 20px;
@@ -109,8 +120,7 @@ header {
         margin: auto 20px 20px 40px;
 }
 
-/* Footer */
-
+/**************** FOOTER */
 footer {
         display: flex;
         flex-flow: row nowrap;

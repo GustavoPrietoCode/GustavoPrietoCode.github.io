@@ -2,13 +2,14 @@
 
 :root {
   --main-color: rgb(201, 233, 206);
+  --second-color: #ffffff;
+  --third-color: black;
 }
 
 body {
   font-family: 'ubuntu', sans-serif;
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   /* border: solid 1px red; */
-
 }
 
 
@@ -65,22 +66,21 @@ body {
 .hero .wrap .box .menu a {
     display: block;
     border: solid 1px;
-    padding: 10px;
+    padding: 20px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
-    color: var(--main-color);
+    font-size: 20px;
+    color: var(--second-color);
   }
  
   /* ------------------------PRESENTACIÓN*/
 .hero .wrap .box .portada {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 4fr));
-  height: 400px;
+  height: 300px;
   margin: 20px;
   color: var(--main-color);
-  border: solid 1px red;
   text-align: center;
 }
 
@@ -88,11 +88,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   border-radius: 55px;
   margin: 15px;
   padding: 10px;
-  border: solid 1px black;
+  border: solid 1px var(--third-color);
   color: black;
 }
 
@@ -102,7 +102,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   border-radius: 55px;
   margin: 15px;
   padding: 10px;
@@ -113,7 +113,7 @@ body {
 
   /* ------------------------SERVICIOS */
 .servicios {
-  border: solid 1px black;
+  border: solid 10px black;
   height: auto;
   column-gap: 10px;
   margin: 10px;
@@ -138,7 +138,7 @@ body {
 
 .servicios .trescajas .cajaservicios {
   margin-top: 20px;
-  border: 1px solid red;
+  border: 1px solid var(--third-color);
   padding: 5px 5px;
   text-align: center;
 }
@@ -154,7 +154,7 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  border: solid 1px black;
+  border: solid 10px var(--third-color);
   margin: 10px;
   padding: 15px 20px;
 }
@@ -169,13 +169,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid var(--third-color);
   padding: 20px;
 }
 
 .porfolio .wrap .cajas .cajaservicios{
   text-align: center;
-  border: 1px solid red;
+  border: 1px solid var(--third-color);
   margin:10px;
   padding: 20px;
 }
@@ -185,7 +185,7 @@ body {
   /* ------------------------FORMULARIO DE CONTACTO */
 .formulario {
   display: grid;
-  border: 1px solid black;
+  border: 10px solid var(--third-color);
   margin: 10px;
   justify-content: center;
 }
@@ -198,8 +198,8 @@ body {
   width: 350px;
   margin: 20px;
   padding: 10px;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid var(--third-color);
+  color: var(--third-color);
 }
 
 .formulario .cajaformulario .form-control {
@@ -212,7 +212,7 @@ textarea {
 }
 
 .formulario .cajaformulario input[type="submit"]{
-  background-color: white;
+  background-color: var(--second-color);
   font-weight: bold;
   height: 35px;
   margin-top: 15px;
@@ -220,19 +220,15 @@ textarea {
 
 } 
 
-
-
-
-
   /* ------------------------FOOTER */
 
 .footercompleto {
     position: relative;
-    margin: 20px;
+    margin: 10px;
     bottom: 0;
     height: 250px;
-    border: 1px solid black;
-    color:black;
+    border: 10px solid var(--third-color);
+    color:var(--third-color);
   }
 
 .footercompleto .cajapie1{
