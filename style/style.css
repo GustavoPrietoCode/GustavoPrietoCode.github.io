@@ -1,0 +1,35 @@
+body{
+    color:aliceblue;
+    font-family:'Quicksand', sans-serif;
+    background: black;
+    padding: 25px 10px 20px 30px;
+}
+
+.wrapper {
+    display: grid;
+    padding: 10px 10px 10px 10px;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+p, a{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+
+#caja1 {
+    background: whitesmoke;
+    color: black;
+}
+
+#caja3 {
+    background: whitesmoke;
+    color: black;
+}
