@@ -1,35 +1,130 @@
-body{
-    color:aliceblue;
-    font-family:'Quicksand', sans-serif;
-    background: black;
-    padding: 25px 10px 20px 30px;
+
+* {
+    margin:0;
+    padding: 0;
 }
 
-.wrapper {
-    display: grid;
-    padding: 10px 10px 10px 10px;
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 }
 
-h1 {
-    font-weight: 400;
-    font-size: 50px;
+.container .section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+   /*  background-blend-mode: multiply; */
 }
 
-p, a{
-    font-size: 25px;
+.container .section:nth-child(1) {
+    background: url(../img/bg1.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(2) {
+    background: url(../img/bg2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(3) {
+    background: url(../img/bg3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container .section:nth-child(4) {
+    background: url(../img/bg4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.container .section .content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    max-width: 700px;
+}
+
+.container .section .content h1 {
+    background: #fff;
+    color: #111;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.container .section .content h2 {
+    background: #fff;
+    color: #111;
+    font-weight: 300;
+    display: inline-block;
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+.container .section .content p {
+    background: #fff;
+    color: #111;
+    font-weight: 200;
+    display: inline-block;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.container a {
+    color:#111;
     text-decoration: none;
 }
 
-a:hover{
-    color:red;
+.container a:hover {
+    background-color: black;
+    color:white;
+    text-decoration: none;
 }
 
-#caja1 {
-    background: whitesmoke;
-    color: black;
-}
+/* ************************************************* */
+/* Responsive mobile */
+/* ************************************************* */
 
-#caja3 {
-    background: whitesmoke;
-    color: black;
-}
+@media only screen and (max-width: 600px) {
+    .container .section .content {
+        position: absolute;
+        bottom: 50px;
+        left: 25px;
+
+    }
+    .container .section .content h1 {
+        background: #111;
+        color: #fff;
+        font-weight: 400;
+        padding: 5px;
+        font-size: 2em;
+    }
+
+    .container .section .content h2 {
+        background: #fff;
+        color: #111;
+        font-weight: 150;
+        padding: 5px;
+        font-size: 1.2em;
+    }
+    
+    .container .section .content p {
+        background: #fff;
+        color: #111;
+        font-weight: 100;
+        padding: 5px;
+        font-size: 1em;
+    }
+
+
+
+  }
